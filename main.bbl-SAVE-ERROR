@@ -1,0 +1,187 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{anyt/global//global/global/global}
+    \entry{muro_schwede_strickland_2007_triangulated_categories_models}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=6938e33b89d9c7d34741764fa8faa49b}{%
+           family={Muro},
+           familyi={M\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod}}}%
+        {{hash=48d1fc5c8a97cb0633a8f2ffb7fcbf7b}{%
+           family={Schwede},
+           familyi={S\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=7d41ffc2c46af790df2405d5fcdc8cc9}{%
+           family={Strickland},
+           familyi={S\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{5eae652b93cfe1a88d313bf13733489d}
+      \strng{fullhash}{5eae652b93cfe1a88d313bf13733489d}
+      \strng{fullhashraw}{5eae652b93cfe1a88d313bf13733489d}
+      \strng{bibnamehash}{5eae652b93cfe1a88d313bf13733489d}
+      \strng{authorbibnamehash}{5eae652b93cfe1a88d313bf13733489d}
+      \strng{authornamehash}{5eae652b93cfe1a88d313bf13733489d}
+      \strng{authorfullhash}{5eae652b93cfe1a88d313bf13733489d}
+      \strng{authorfullhashraw}{5eae652b93cfe1a88d313bf13733489d}
+      \field{labelalpha}{MSS07}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0020-9910}
+      \field{journaltitle}{Inventiones Mathematicae}
+      \field{number}{2}
+      \field{shortjournal}{Invent. Math.}
+      \field{title}{Triangulated Categories without Models}
+      \field{volume}{170}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{231\bibrangedash 241}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s00222-007-0061-2
+      \endverb
+    \endentry
+    \entry{muro_2020_first_obstructions_enhancing}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=6938e33b89d9c7d34741764fa8faa49b}{%
+           family={Muro},
+           familyi={M\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{fullhash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{fullhashraw}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{bibnamehash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{authorbibnamehash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{authornamehash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{authorfullhash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{authorfullhashraw}{6938e33b89d9c7d34741764fa8faa49b}
+      \field{extraname}{1}
+      \field{labelalpha}{Mur20}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0025-5874}
+      \field{journaltitle}{Mathematische Zeitschrift}
+      \field{number}{1--2}
+      \field{shortjournal}{Math. Z.}
+      \field{title}{The First Obstructions to Enhancing a Triangulated Category}
+      \field{volume}{296}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{719\bibrangedash 759}
+      \range{pages}{41}
+      \verb{doi}
+      \verb 10.1007/s00209-019-02438-y
+      \endverb
+    \endentry
+    \entry{muro_2022_enhanced_finite_triangulated}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=6938e33b89d9c7d34741764fa8faa49b}{%
+           family={Muro},
+           familyi={M\bibinitperiod},
+           given={Fernando},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{fullhash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{fullhashraw}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{bibnamehash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{authorbibnamehash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{authornamehash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{authorfullhash}{6938e33b89d9c7d34741764fa8faa49b}
+      \strng{authorfullhashraw}{6938e33b89d9c7d34741764fa8faa49b}
+      \field{extraname}{2}
+      \field{labelalpha}{Mur22}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1474-7480, 1475-3030}
+      \field{journaltitle}{Journal of the Institute of Mathematics of Jussieu}
+      \field{number}{3}
+      \field{title}{Enhanced {{Finite Triangulated Categories}}}
+      \field{volume}{21}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{pages}{741\bibrangedash 783}
+      \range{pages}{43}
+      \verb{doi}
+      \verb 10.1017/S1474748020000250
+      \endverb
+    \endentry
+    \entry{rizzardo_van_den_bergh_2020_$k$linear_triangulated_category}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=f0fe80a8a47b28039e89a7fec268e7ef}{%
+           family={Rizzardo},
+           familyi={R\bibinitperiod},
+           given={Alice},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5f315521749bb6385ae6f9e0746e0516}{%
+           family={Van\bibnamedelimb den\bibnamedelima Bergh},
+           familyi={V\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {[Annals of Mathematics, Trustees of Princeton University on Behalf of the Annals of Mathematics, Mathematics Department, Princeton University]}%
+      }
+      \strng{namehash}{5a140c796e490bf8cf682d83f08f11d7}
+      \strng{fullhash}{5a140c796e490bf8cf682d83f08f11d7}
+      \strng{fullhashraw}{5a140c796e490bf8cf682d83f08f11d7}
+      \strng{bibnamehash}{5a140c796e490bf8cf682d83f08f11d7}
+      \strng{authorbibnamehash}{5a140c796e490bf8cf682d83f08f11d7}
+      \strng{authornamehash}{5a140c796e490bf8cf682d83f08f11d7}
+      \strng{authorfullhash}{5a140c796e490bf8cf682d83f08f11d7}
+      \strng{authorfullhashraw}{5a140c796e490bf8cf682d83f08f11d7}
+      \field{labelalpha}{RV20}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003-486X}
+      \field{journaltitle}{Annals of Mathematics. Second Series}
+      \field{number}{2}
+      \field{shortjournal}{Ann. of Math. (2)}
+      \field{title}{A $k$-linear triangulated category without a model}
+      \field{volume}{191}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{393\bibrangedash 437}
+      \range{pages}{45}
+      \verb{doi}
+      \verb 10.4007/annals.2020.191.2.3
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

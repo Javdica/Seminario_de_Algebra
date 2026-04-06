@@ -1,15 +1,14 @@
 # Fdb version 4
-["biber main"] 1775464870.81863 "main.bcf" "main.bbl" "main" 1775464950.2644 0
+["biber main"] 1775489127.58186 "main.bcf" "main.bbl" "main" 1775489740.47494 0
   "bib2.bib" 1774606012 2473 c47eac679dc23ce6cb4bf58b504a15c2 ""
-  "main.bcf" 1775464949 109503 29b7a35fd86f61cfa86275a9654399ba "pdflatex"
+  "main.bcf" 1775489740 109432 2104a4c749f19b2781881bec39d5d529 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1775464946.70667 "c:/Users/diazc/OneDrive/Documentos/PhD/Charlas/Seminario de Álgebra 2026/Seminario_de_Álgebra_26/main.tex" "main.pdf" "main" 1775464950.2653 0
-  "BorromeanRings.svg.png" 1774541119 39336 a1cbdd9c5bb3292fcfe2843eed828b54 ""
+["pdflatex"] 1775489736.91348 "c:/Users/diazc/OneDrive/Documentos/PhD/Charlas/Seminario de Álgebra 2026/Seminario_de_Álgebra_26/main.tex" "main.pdf" "main" 1775489740.47586 0
   "US.jpg" 1774439638 188641 b8963d54852ab23ec35bdc717e73bc44 ""
-  "c:/Users/diazc/OneDrive/Documentos/PhD/Charlas/Seminario de Álgebra 2026/Seminario_de_Álgebra_26/main.tex" 1775464946 17816 61db8d39eb9a9fa341086e8ac4e20685 ""
+  "c:/Users/diazc/OneDrive/Documentos/PhD/Charlas/Seminario de Álgebra 2026/Seminario_de_Álgebra_26/main.tex" 1775489736 15200 9341abe4f417786d857ca70d3e48a522 ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1771930189 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1771925595 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1771925595 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -51,7 +50,6 @@
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb" 1771925596 32001 6aeea3afe875097b1eb0da29acd61e28 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1771925596 30251 6afa5cb1d0204815a708a080681d4674 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1771925596 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
-  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1771925596 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1771925596 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb" 1771925597 24457 5cbb7bdf209d5d1ce9892a9b80a307cc ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1771925597 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
@@ -60,13 +58,12 @@
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb" 1771925597 25150 e0d09798d232ab9d00c5c0a8df6cc22d ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb" 1771925597 25168 c89d909bac101e478326bb9e00519ca3 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1771925597 32569 5e5ddc8df908dea60932f3c484a54c0d ""
-  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1771925597 32587 65067f817f408bc71a7312f3d9828a9b ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1771925597 32626 5abc8bb2f28aa647d4c70f8ea38cc0d3 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1771925597 31099 342ef5a582aacbd3346f3cf4579679fa ""
+  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb" 1771925598 30273 87a352d78b6810ae5cfdc68d2fb827b2 ""
+  "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1771925599 31764 459c573c03a4949a528c2cc7f557e217 ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1771925599 34694 870c211f62cb72718a00e353f14f254d ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb" 1771936968 16077 4737ac34f0fb5608550f3780a0202c22 ""
-  "c:/texlive/2025/texmf-dist/fonts/type1/public/xypic/xyatip10.pfb" 1771939866 17164 ec38b53842f4384705514c6703fa9108 ""
-  "c:/texlive/2025/texmf-dist/fonts/type1/public/xypic/xybtip10.pfb" 1771939866 16979 ad391dfddfd050862d933e5807ab1edc ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/xypic/xycmat10.pfb" 1771939866 17442 a492245d942af2cc4c65197bb428d65e ""
   "c:/texlive/2025/texmf-dist/fonts/type1/public/xypic/xycmbt10.pfb" 1771939866 17084 89c3546ee426179761f124b92f40158d ""
   "c:/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1771934201 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -292,13 +289,12 @@
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1771942467 3636145 b9817b5aa631357fea0b23d371165ff6 ""
   "c:/texlive/2025/texmf.cnf" 1771942224 713 e69b156964470283e0530f5060668171 ""
   "imus_basico.png" 1774439638 9954 b8f94e4d830f5300031cbc5c8fafab49 ""
-  "main.aux" 1775464949 7821 f7b66121f177f852c1e2b17f6ffc9dfb "pdflatex"
-  "main.bbl" 1775464872 8813 518155aeb25cfc4b91de09aeb0e43c48 "biber main"
-  "main.nav" 1775464949 3994 1ed08302821953752a4509e8dc0d0f23 "pdflatex"
-  "main.out" 1775464949 870 bf66a6e3603043a45584d63ae38d1846 "pdflatex"
-  "main.run.xml" 1775464949 2305 539b5ff00bef207e16fbb55a728118a9 "pdflatex"
-  "main.tex" 1775464946 17816 61db8d39eb9a9fa341086e8ac4e20685 ""
-  "main.toc" 1775464949 325 2c14750d28e24b712563b8863258ffa6 "pdflatex"
+  "main.aux" 1775489740 6619 054f432bb76e2e2de646ffea8401e8be "pdflatex"
+  "main.bbl" 1775489129 7428 dfdcf511af62f319baa9ca9a1a699abf "biber main"
+  "main.nav" 1775489740 3237 042b39732592e42195042ab3bda3d3c9 "pdflatex"
+  "main.out" 1775489740 870 1032c6b670b80d4993b73a3285ce5a0d "pdflatex"
+  "main.run.xml" 1775489740 2305 539b5ff00bef207e16fbb55a728118a9 "pdflatex"
+  "main.tex" 1775489736 15200 9341abe4f417786d857ca70d3e48a522 ""
   (generated)
   "main.aux"
   "main.bcf"
