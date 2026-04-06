@@ -1,0 +1,364 @@
+\documentclass{beamer}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{tikz}
+\usetikzlibrary{cd, calc}
+\usepackage[all,cmtip,2cell]{xy}
+\UseAllTwocells
+\usepackage{braket}
+
+\usepackage[backend=biber,style=alphabetic]{biblatex}
+\addbibresource{bib2.bib}
+
+
+\tikzset{
+  snake left/.style={
+    rounded corners,
+    to path={
+      let \p1 = (\tikztostart.east),
+          \p2 = (\tikztotarget.west),
+          \p3 = ($(\p1)!0.5!(\p2)$),
+          \n1 = {8pt} 
+      in
+      (\p1)
+      -- (\x1 + \n1, \y1)
+      -- (\x1 + \n1, \y3)
+      -- (\x2 - \n1, \y3) \tikztonodes
+      -- (\x2 - \n1, \y2)
+      -- (\p2)
+    }
+  }
+}
+
+
+\newcommand*{\theorembreak}{\usebeamertemplate{theorem end}\framebreak\usebeamertemplate{theorem begin}}
+
+
+\title[Exotic Triangulations]{Exotic Triangulations and the Octahedral Axiom}
+\author{Javier Díaz Cabrera}
+\institute{Universidad de Sevilla}
+\date{April 8th, 2026}
+
+\usetheme{Madrid}
+
+\AtBeginSection[]{\begin{frame}\frametitle{Outline}\tableofcontents[currentsection]\end{frame}}
+
+
+
+\setbeamercovered{transparent}
+
+
+
+
+
+
+
+\begin{document}
+
+\begin{frame}
+		\maketitle
+  \center
+  \vspace{-10mm}
+    \includegraphics[scale=0.075]{US.jpg} \hspace{5mm}
+    \includegraphics[scale=0.5]{imus_basico.png}\\ \vspace{3mm}
+    \scriptsize \textit{Financially supported by an FPU grant (FPU23/01226) \\ from the Spanish Ministry of Science, Innovation and Universities.}
+
+	\end{frame}
+
+	\begin{frame}{Contents}
+		\tableofcontents
+	\end{frame}
+
+
+\section{Triangulated categories}
+
+
+\subsection{Motivation}
+
+\begin{frame}{(Co)chain complexes and (co)homology}
+
+
+    Mathematicians are often interested in studying the cohomology of some cochain complexes over some abelian category $\mathscr{A}$ (e.g. of modules over some ring).
+    
+    \vspace{3mm}
+    The category $\mathbf{C}(\mathscr{A})$ is also abelian, which is nice. \pause In particular, we have the notion of short exact sequence, and a short exact sequence of complexes induces a long exact sequence in cohomology
+   
+    
+\begin{center}
+    \begin{tikzcd}[ampersand replacement=\&]
+  \dots \ar[r] \& H^{n}(A) \ar[r] \& H^{n}(B) \ar[r] \& H^{n}(C) \ar[dll, snake left] \& \\
+  \& H^{n+1}(A) \ar[r] \& H^{n+1}(B) \ar[r] \& H^{n+1}(C) \ar[r] \& \dots
+\end{tikzcd}
+\end{center}
+
+
+\end{frame}
+
+\begin{frame}{Homotopy category and derived category}
+
+    Many constructions over morphisms of cochain complexes only depend on the homotopy class, so it makes sense to work in the (smaller) homotopy category
+    $$\mathbf{K}(\mathscr{A}) := \mathbf{C}(\mathscr{A})/\simeq.$$
+    Another standard construction is the derived category $\mathbf{D}(\mathscr{A})$, which inverts the homology isomorphisms. \pause
+    
+  \vspace{3mm}
+  However, neither of those categories is abelian. \pause But they do have a triangulated structure!
+
+  \vspace{3mm}
+  Triangulated categories are a (relatively successful) attempt to axiomatize the properties of $\mathbf{K}(\mathscr{A})$ and $\mathbf{D}(\mathscr{A})$ that are relevant for homological algebra.
+  
+\end{frame}
+
+
+
+
+
+\subsection{The axioms}
+
+\begin{frame}[allowframebreaks]{What is a triangulated category?}
+    \begin{definition}
+      A \textit{pretriangulated category} is an additive category $\mathscr{T}$ together with an autoequivalence $\Sigma\colon \mathscr{T}\to\mathscr{T}$ and a class of distinguished triangles 
+    $$X\to Y\to Z\to \Sigma X$$ 
+    satisfying the following axioms:
+
+    \theorembreak
+
+    \begin{itemize}
+        \item[TR1] Every triangle which is isomorphic to a distinguished triangle is distinguished. Every triangle $0\to X \overset{id}{\to} X\to 0$ is distinguished. Every morphism $\alpha:X\to Y$ can be completed to a distinguished triangle $X\to Y\to Z\to \Sigma X$.
+        \item[TR2] A triangle $X \overset{\alpha}{\to} Y\overset{\beta}{\to} Z \overset{\gamma}{\to} \Sigma X$ is distinguished if and only if the triangle $Y \overset{\beta}{\to} Z \overset{\gamma}{\to} \Sigma X \overset{-\Sigma \alpha}{\to} \Sigma Y$ is distinguished.
+        \item[TR3] Given a commutative diagram
+        with distinguished rows, there exists a morphism $h\colon Z\to Z'$ making the whole diagram commute
+        $$ \xymatrix{ X \ar[r] \ar[d]^f & Y \ar[r] \ar[d]^g & Z \ar[r] \ar@{.>}[d]^h & \Sigma X  \ar[d]^{\Sigma f} \\
+         X' \ar[r] & Y' \ar[r] & Z' \ar[r] & \Sigma X' } $$
+    \end{itemize}
+    \end{definition} 
+  \end{frame}
+
+
+\begin{frame}{The octahedral axiom}
+    \begin{definition}
+      A \textit{triangulated category} is a pretriangulated category satisfying the \emph{octahedral axiom}:
+    \begin{itemize}
+        \item[TR4] Given distinguished triangles $(\alpha_1, \beta_1, \gamma_1)$, $(\alpha_2, \beta_2, \gamma_2)$ and $(\alpha_3, \beta_3, \gamma_3)$ such that $\alpha_3 = \alpha_2 \circ \alpha_1$, there exists a distinguished triangle $(\alpha_4, \beta_4, \gamma_4)$ such that the following diagram commutes
+        \vspace{-3mm}
+        $$\xymatrix{X \ar[r]^{\alpha_1} \ar@{=}[d] & Y \ar[r]^{\beta_1} \ar[d]^{\alpha_2} & U \ar[r]^{\gamma_1} \ar@{.>}[d]^{\alpha_4} & \Sigma X \ar@{=}[d]
+    \\ X \ar[r]^{\alpha_3} & Z \ar[r]^{\beta_3} \ar[d]^{\beta_2} & V \ar[r]^{\gamma_3} \ar@{.>}[d]^{\beta_4} & \Sigma X \ar[d]^{\Sigma \alpha_1 } \\ 
+    & W \ar@{=}[r] \ar[d]^{\gamma_3} & W \ar[r]^{\gamma_3} \ar@{.>}[d]^{\gamma_4} & \Sigma Y
+    \\ & \Sigma Y \ar[r]_{\Sigma \beta_1} & \Sigma U &
+    }$$
+    \end{itemize}
+    \end{definition}
+  
+\end{frame}
+
+\begin{frame}{Short exact sequences vs distinguished triangles}
+    Distinguished triangles are the analogue of short exact sequences in the triangulated setting. For instance, a distinguished triangle in $\mathbf{K}(\mathscr{A})$ induces a long exact sequence in cohomology.
+
+    \vspace{2mm}
+    
+    With this in mind, the octahedral axiom can be seen as an analogue of the second isomorphism theorem:
+    
+    \begin{center}
+      \begin{tikzcd}[ampersand replacement=\&]
+      A \ar[r, hook] \ar[d, equal] \& B \ar[r, two heads] \ar[d, hook] \& B/A \ar[d, hook] \\
+      A \ar[r, hook] \& C \ar[r, two heads] \ar[d, two heads] \& C/A \ar[d, two heads] \\
+      \& C/B \ar[r, "\cong"] \& \frac{C/A}{B/A} \& 
+    \end{tikzcd}
+    \end{center}
+
+    \vspace{1mm}
+    \pause
+    \textbf{Open problem:} There is no known example of a pretriangulated category that does not satisfy the octahedral axiom, nor has it been proven to be a consequence of (TR1)-(TR3).  
+\end{frame}
+
+
+\section{Exotic categories}
+
+\begin{frame}{Non-exotic = enhanceable}
+    Derived categories are not the only widely used examples of triangulated categories. We could make the following division:
+  \begin{itemize}
+    \item \textbf{Algebraic:} those that are equivalent to the stable category of a Frobenius category $\underline{\mathscr{F}}$.
+    \item \textbf{Topological:} those that are equivalent to the homotopy category of a stable model category $ho\mathscr{M}$.
+    \item \textbf{Exotic:} those that are neither algebraic nor topological, i.e. those that admit no enhancement.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Exotic examples}
+  There are only a few known examples of exotic triangulated categories:
+  \begin{itemize}
+    \item Muro, Schwede and Strickland \cite{muro_schwede_strickland_2007_triangulated_categories_models} gave an exotic structure to the category of finitely generated projective modules over $\mathbb{Z}/4\mathbb{Z}$.
+    \item Rizzardo and Van den Bergh \cite{rizzardo_van_den_bergh_2020_$k$linear_triangulated_category} gave a class of exotic examples which are linear over fields of characteristic zero.
+  \end{itemize}
+
+  \vspace{3mm}
+  We have found a third class of examples which are linear over algebraically closed fields of any characteristic.
+
+\end{frame}
+
+
+\section{Our example}
+
+\begin{frame}{A theorem by A. Heller}
+    We first need a couple of previous results. The first one is a classical theorem on the subject.
+
+    \begin{theorem}
+        [A. Heller, 1968, \cite{heller1968stable}] Let $\mathscr{T}$ be an additive category with an autoequivalence $\Sigma$. 
+        Then, the set of pretriangulated structures on $(\mathscr{T}, \Sigma)$ is in bijection with the set of triangulated natural isomorphisms between $\Omega^{-3}$ and $\Sigma$, seen as triangulated functors $\underline{mod}(\mathscr{T})\to \underline{mod}(\mathscr{T})$.  
+    \end{theorem}
+    
+\end{frame}
+
+\begin{frame}{Previous work by Muro}
+    The second one is in the more particular world of finite dimensional algebras.
+
+\begin{theorem}
+    [F. Muro, 2022, \cite{muro_2022_enhanced_finite_triangulated}] Let $\Lambda$ be a basic connected non-separable self-injective twisted-3-periodic f.d. algebra over a perfect field $k$.
+    Then, there is an automorphism $\sigma\in Aut(\Lambda)$ such that twisting by $\sigma$ is essentially the unique shift functor $\Sigma= (-)_\sigma \colon proj(\Lambda) \to proj(\Lambda)$ that makes $(proj (\Lambda), \Sigma)$ admit an algebraic triangulated structure.
+\end{theorem}
+
+\end{frame}
+
+\begin{frame}{Idea of the construction}
+    The idea is to modify the automorphism $\sigma$ into another automorphism $\tau = \sigma \kappa$ such that
+    $$ (-)_{\tau} \ncong (-)_{\sigma}\colon proj(\Lambda) \to proj(\Lambda) $$
+    but $(-)_{\tau}\colon \underline{mod}(\Lambda)\to \underline{mod}(\Lambda)$ is still naturally isomorphic to $\Omega^{-3}$ as triangulated functors. 
+  \pause In particular, this is the case if $\kappa$ is a representative for a nontrivial element of the kernel of
+    $$ Pic(\Lambda) \to \underline{Pic}(\Lambda), $$
+     where
+    $$ Pic(\Lambda) = Aut(\Lambda)/Inn(\Lambda) \cong \Set{ \text{Self-equivalences of $proj(\Lambda)$ }}/ \cong, $$
+    $$ \underline{Pic}(\Lambda) := \Set{ \text{Triangulated self-equivalences of $\underline{mod}(\Lambda)$ }}/ \cong_{tr} .  $$
+  \end{frame}
+
+\begin{frame}{Idea of the construction}
+    The picture is as follows:
+    \[\begin{tikzcd}[row sep=large, column sep=small, cells={anchor=center}, ampersand replacement=\&]
+      \text{Alg. triang.\ str. \ on $(proj(\Lambda), (-)_\sigma)$} \ar[r, "\text{Heller}"] \& \delta\colon (-)_{\sigma}\cong \Omega^{-3} \ar[d] \\
+      \text{Pretriang.\ str.\ on $(proj(\Lambda), (-)_{\tau})$}  \& \varepsilon \colon (-)_{\tau} \cong \Omega^{-3} \ar[l, "\text{Heller}"]
+    \end{tikzcd}\]
+    where $\varepsilon$ is defined as a horizontal composition of natural isomorphisms
+    \[\xymatrix@C=3.5pc{
+      \underline{mod}(\Lambda) \rtwocell^{(-)_\sigma}_{\Omega^{-3}}{\;\;\delta} & \underline{mod}(\Lambda) \rtwocell^{(-)_\kappa}_{Id}{\;\;\eta} & \underline{mod}(\Lambda)
+    }.\]
+  \end{frame}
+
+  \begin{frame}{Our example}
+    So the problem reduces to find an algebra $\Lambda$ satisfying the conditions of the theorem in \cite{muro_2022_enhanced_finite_triangulated} and such that the kernel of $Pic(\Lambda) \to \underline{Pic}(\Lambda)$ is nontrivial. We have found a family of examples among the deformed preprojective algebras of type $L_2$, which are given by the following quiver with relations:
+    $$P(L_2) \;=\; k\!\left(\begin{tikzcd}[column sep=large, ampersand replacement=\&]
+      1 \ar[loop left, "b"] \ar[r, shift left, "a_1"] \& 2 \ar[l, shift left, "a_2"]
+    \end{tikzcd}\right) \Big/ \left( b^2 + a_1a_2,\; a_2a_1 \right).$$
+    \pause
+    The nontrivial element of the kernel is the class of the automorphism
+    $$\kappa\colon P(L_2) \to P(L_2), \quad a_1 \mapsto a_1, \; a_2 \mapsto a_2, \; b \mapsto b+b^3.$$
+    This example has the particularity that $(-)_\kappa$ is actually equal to the identity functor on $proj(P(L_2))$ as triangulated functors over $\underline{mod}(P(L_2))$, so we can take $\eta = id$.
+  \end{frame}
+
+  \begin{frame}{Our example}
+    \begin{itemize}
+      \item It is now clear that the pretriangulated structure given by $\varepsilon$ on $(proj(P(L_2)), (-)_\tau)$ is not algebraic, since $(-)_\tau \ncong (-)_\sigma$.
+      \pause
+      \item Furthermore, it can also be shown to be non-topological.
+      \pause
+      \item There is a last important thing to check: whether or not it satisfies the octahedral axiom. \textbf{Spoiler:} We don't know.
+    \end{itemize}
+  \end{frame}
+
+
+\section{On the octahedral axiom}
+
+%\begin{frame}{Neeman's characterization}
+%    Working with the octahedral axiom as stated before is hard. We prefer the following equivalent condition due to A. Neeman \cite{neeman_1991_new_axioms_triangulated}:
+%    \begin{itemize}
+%      \item[TR4'] Given a commutative square between distinguished triangles
+%        $$\xymatrix{X \ar[r]^{\alpha_1} \ar[d]^{f} & Y \ar[r]^{\beta_1} \ar[d]^{g} & Z \ar[r]^{\gamma_1} & \Sigma X \ar[d]^{\Sigma f} \\
+%        X' \ar[r]^{\alpha_2} & Y' \ar[r]^{\beta_2} & Z' \ar[r]^{\gamma_2} & \Sigma X' }$$
+%        there exists a morphism $h\colon Z\to Z'$ making the whole diagram commute and such that the cone triangle
+%        $$\xymatrix@C=1.2pc{
+%          X'\oplus Y \ar[rr]^-{\left(\begin{smallmatrix} -\alpha_2 & 0 \\ g & \beta_1 \end{smallmatrix}\right)} & & Y'\oplus Z \ar[rr]^-{\left(\begin{smallmatrix} -\beta_2 & 0 \\ h & \gamma_1 \end{smallmatrix}\right)} & & Z'\oplus \Sigma X \ar[rr]^-{\left(\begin{smallmatrix} -\gamma_2 & 0 \\ \Sigma f & \Sigma\alpha_1 \end{smallmatrix}\right)} & & \Sigma X'\oplus \Sigma Y
+%        }$$
+%        is distinguished.
+%    \end{itemize}
+%\end{frame}
+
+
+\begin{frame}{Can't we disprove it?}
+    If the octahedral axiom did not hold, it would be the first example of a pretriangulated category that is not triangulated, so we would really like that.
+    \pause
+
+    \vspace{3mm}
+    We have tried to find counterexamples by computer, but have not been able to find any "small" counterexample. Actually, every completion of the diagram that we try gives a distinguished cone.
+
+    \vspace{3mm} 
+    Realistically, the most likely scenario is that it does hold.
+\end{frame}
+
+
+\begin{frame}{How can we prove it?}
+    Strategies we have tried:
+    \begin{itemize}
+      \item Recover it from the octahedral axiom on the algebraic structure.
+      \item Adapt the proof of the algebraic case. \pause
+      \item Use a (computable) sufficient condition given in \cite{muro_2020_first_obstructions_enhancing} in terms of the differential of a spectral sequence. It turns out that it is not satisfied. It is also the first example where this condition has been checked with a negative result. \pause
+      \item \textbf{Classifying initial data:} It turns out that the octahedral axiom does only depend on the induced stable morphism $ker(\alpha_1)\to \ker(\alpha_2)$, so we can try to classify all the possible initial data and check the axiom for each possible case. 
+      We don't know how to do this, but it may be a path to follow.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{A new characterization}
+    It is to be noticed that, until now, there was no known condition on the image of a pretriangulated structure under Heller's bijection that were equivalent to the octahedral axiom. Fernando had an intuition of how such a condition might look like and we have been able to prove his intuition was right.
+    
+    \vspace{3mm}
+    The answer is given by a secondary cohomology operation. The first example of such operations is the Massey triple product.
+    \begin{figure}
+      \includegraphics[scale=0.2]{BorromeanRings.svg}
+    \end{figure}
+  \end{frame}
+
+\begin{frame}{Naturality defect product}
+  \begin{definition}[Naturality defect product]
+    Let $F,G\colon \mathscr{A}\to \mathscr{B}$ be dg functors and $\tilde{\delta}$ a graded natural transformation from $H^*(F)$ to $H^*(G)$ of degree $t$. Moreover, let $\delta_X$ be a representative for $\tilde{\delta}_X$ for every $X$ in $\mathscr{A}$. Suppose $a=[\alpha]\in H^p(\mathscr{A})(A,B)$ and $b=[\beta]\in H^q(\mathscr{A})(B,C)$ have vanishing composition. More precisely, let
+    $$ \beta\alpha = d(s), \hspace{5mm} D_{\delta}(\alpha) = d(x), \hspace{5mm} D_{\delta}(\beta)=d(y). $$
+    Then, we define the \emph{naturality defect product} on $a$ and $b$ with respect to $\tilde{\delta}$ by
+    $$\langle b,a\rangle_{\tilde{\delta}} := \big[ \;[ \; D_{\delta}(s) - (-1)^t \big( yF(\alpha) + (-1)^{q+tq}G(\beta) x \big) \; ] \; \big],$$
+    which is seen as an element of the quotient 
+    $$\frac{H^{p+q+t-1}(\mathscr{B})(F(A),G(C))}{G(b)\circ H^{p+t-1}(\mathscr{B})(F(A),G(B)) + H^{q+t-1}(\mathscr{B})(F(B),G(C)) \circ F(a) }. $$
+     
+  \end{definition}
+  
+\end{frame}
+  
+\begin{frame}{Naturality defect product}
+  The picture is as follows:
+  $$\xymatrix{ F(A) \ar@{=>}[dr]^{x} \ar[r]^{F(\alpha)} \ar@/^2pc/[rr]^0_{\Uparrow F(s)} \ar[d]_{\delta_A} & F(B) \ar@{=>}[dr]^{y} \ar[r]^{F(\beta)} \ar[d]^{\delta_B} & F(C) \ar[d]^{\delta_C} \\ G(A) \ar[r]_{G(\alpha)} \ar@/_2pc/[rr]_0^{\Downarrow G(s)} & G(B) \ar[r]_{G(\beta)} & G(C) }$$
+\end{frame}
+
+\begin{frame}{The characterization}
+  In the triangulated setting, we take all dg categories to be the dg category $\mathscr{A}$ of acyclic complexes over $\mathscr{T}$, so that $H^0(\mathscr{A}) = \underline{Ac}(\mathscr{T}) \simeq \underline{mod}(\mathscr{T})$.
+  \begin{theorem}[DC.-Muro, 2026]
+    Let $\mathscr{T}$ be a pretriangulated category with associated natural transformation $\tilde{\delta}$. Then, the following are equivalent:
+    \begin{enumerate}
+        \item $\mathscr{T}$ is triangulated.
+        \item The naturality defect product $\langle g,f\rangle_{\tilde{\delta}}$ vanishes for every morphism $f$ between exact triangles and every morphism $g$ such that $gf=0$.
+    \end{enumerate}
+ \end{theorem}
+ Does this perspective help for our example? It is also unclear.
+\end{frame}
+
+
+
+
+
+
+\begin{frame}[allowframebreaks]{References}
+    \printbibliography
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    Thank you for your attention!
+  \end{center}
+\end{frame}
+
+
+
+\end{document}

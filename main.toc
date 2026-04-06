@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Triangulated categories}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Motivation}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{The axioms}{9}{0}{1}
+\beamer@sectionintoc {2}{Exotic categories}{14}{0}{2}
+\beamer@sectionintoc {3}{Our example}{17}{0}{3}
+\beamer@sectionintoc {4}{On the octahedral axiom}{28}{0}{4}
