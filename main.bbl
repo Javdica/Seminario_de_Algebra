@@ -19,6 +19,39 @@
 
 \refsection{0}
   \datalist[entry]{anyt/global//global/global/global}
+    \entry{heller1968stable}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=88417a57b0244b782315c30117175426}{%
+           family={Heller},
+           familyi={H\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{88417a57b0244b782315c30117175426}
+      \strng{fullhash}{88417a57b0244b782315c30117175426}
+      \strng{fullhashraw}{88417a57b0244b782315c30117175426}
+      \strng{bibnamehash}{88417a57b0244b782315c30117175426}
+      \strng{authorbibnamehash}{88417a57b0244b782315c30117175426}
+      \strng{authornamehash}{88417a57b0244b782315c30117175426}
+      \strng{authorfullhash}{88417a57b0244b782315c30117175426}
+      \strng{authorfullhashraw}{88417a57b0244b782315c30117175426}
+      \field{labelalpha}{Hel68}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0002-9904}
+      \field{journaltitle}{Bulletin of the American Mathematical Society}
+      \field{shortjournal}{Bull. Amer. Math. Soc.}
+      \field{title}{Stable homotopy categories}
+      \field{volume}{74}
+      \field{year}{1968}
+      \field{pages}{28\bibrangedash 63}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1090/S0002-9904-1968-11871-3
+      \endverb
+    \endentry
     \entry{muro_schwede_strickland_2007_triangulated_categories_models}{article}{}{}
       \name{author}{3}{}{%
         {{hash=6938e33b89d9c7d34741764fa8faa49b}{%

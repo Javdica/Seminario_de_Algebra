@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.24)  6 APR 2026 17:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.2.24)  7 APR 2026 10:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/diazc/OneDrive/Documentos/PhD/Charlas/Seminario de Álgebra 2026/Seminario_de_Álgebra_26/main.tex"
-(c:/Users/diazc/OneDrive/Documentos/PhD/Charlas/Seminario de Álgebra 2026/Seminario_de_Álgebra_26/main.tex
+**c:/Users/diazc/OneDrive/Documentos/GitHub/Seminario_de_Algebra/Seminario_de_Algebra/main.tex
+(c:/Users/diazc/OneDrive/Documentos/GitHub/Seminario_de_Algebra/Seminario_de_Algebra/main.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (c:/texlive/2025/texmf-dist/tex/latex/beamer/beamer.cls
@@ -1163,7 +1163,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <5> not available
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 363.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 367.
 
 [32
 
@@ -1194,18 +1194,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36827 strings out of 467533
- 725389 string characters out of 5423668
- 1584443 words of memory out of 5000000
- 65003 multiletter control sequences out of 15000+600000
+ 36831 strings out of 467533
+ 725518 string characters out of 5423668
+ 1584512 words of memory out of 5000000
+ 65006 multiletter control sequences out of 15000+600000
  640577 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,24n,123p,3331b,1589s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,24n,123p,3314b,1589s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/xypic/xycmat10.pfb><c:/texlive/2025/texmf-dist/fonts/type1/public/xypic/xycmbt10.pfb>
-Output written on main.pdf (34 pages, 414991 bytes).
+Output written on main.pdf (34 pages, 415198 bytes).
 PDF statistics:
- 1170 PDF objects out of 1200 (max. 8388607)
- 1020 compressed objects within 11 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 1173 PDF objects out of 1200 (max. 8388607)
+ 1023 compressed objects within 11 object streams
+ 81 named destinations out of 1000 (max. 500000)
  301 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -146,7 +146,7 @@
 
 \section{Exotic categories}
 
-\begin{frame}{Non-exotic = enhanceable}
+\begin{frame}{Classification of triangulated categories}
     Derived categories are not the only widely used examples of triangulated categories. We could make the following division:
   \begin{itemize}
     \item \textbf{Algebraic:} those that are equivalent to the stable category of a Frobenius category $\underline{\mathscr{F}}$ (e.g. $\mathbf{K}(\mathscr{A})$ and $\mathbf{D}(\mathscr{A})$). \pause
@@ -215,22 +215,22 @@
         P^1 = \begin{tikzcd}[column sep=huge, ampersand replacement=\&]
           k^4
           \ar[loop left, "{\left(\begin{smallmatrix}
+            0 & 0 & 0 & 0 \\
+            1 & 0 & 0 & 0 \\
             0 & 1 & 0 & 0 \\
-            0 & 0 & 1 & 0 \\
-            0 & 0 & 0 & 1 \\
-            0 & 0 & 0 & 0
+            0 & 0 & 1 & 0
           \end{smallmatrix}\right)}"]
           \ar[r, shift left, "{\left(\begin{smallmatrix}
-            1 & 0 \\
-            0 & 1 \\
-            0 & 0 \\
-            0 & 0
+            1 & 0 & 0 & 0 \\
+            0 & 1 & 0 & 0
           \end{smallmatrix}\right)}"]
           \&
           k^2
           \ar[l, shift left, "{\left(\begin{smallmatrix}
-            0 & 0 & 1 & 0 \\
-            0 & 0 & 0 & 1
+            0 & 0 \\
+            0 & 0 \\
+            1 & 0 \\
+            0 & 1
           \end{smallmatrix}\right)}"]
         \end{tikzcd}$}
         \vspace{3mm}
@@ -239,8 +239,8 @@
         P^2 = \begin{tikzcd}[column sep=huge, ampersand replacement=\&]
           k^2
           \ar[loop left, "{\left(\begin{smallmatrix}
-            0 & 1 \\
-            0 & 0
+            0 & 0 \\
+            1 & 0
           \end{smallmatrix}\right)}"]
           \ar[r, shift left, "{\left(\begin{smallmatrix}
             0 & 0 \\
@@ -312,12 +312,16 @@ So, the idea is to modify the automorphism $\tau$ into another automorphism $\si
     $$ Out(\Lambda) = Aut(\Lambda)/Inn(\Lambda), $$
     $$ \underline{Pic}(\Lambda) := \Set{ \text{Triangulated self-equivalences of $\underline{mod}(\Lambda)$ }}/ \cong_{tr},  $$
     and the map is given by $[\varphi] \mapsto [(-)_\varphi]$.
+
   \end{frame}
 
   \begin{frame}{Idea of the construction}
     \begin{theorem}
       Let $\Lambda$ and $\tau$ be as in the previous theorem. Then, any nontrivial element $\kappa$ in the kernel of $Out(\Lambda) \to \underline{Pic}(\Lambda)$ gives rise to a non-algebraic pretriangulated structure on $(proj(\Lambda), (-)_{\kappa\circ\tau})$.
     \end{theorem}
+    The proof uses a classical theorem by A. Heller \cite{heller1968stable}.
+
+    \vspace{3mm}
     Furthermore, our particular example can also be shown to be non-topological.
   \end{frame}
 
@@ -327,7 +331,7 @@ So, the idea is to modify the automorphism $\tau$ into another automorphism $\si
 \section{On the octahedral axiom}
 
 \begin{frame}{Bonus: The octahedral axiom}
-   The octahedral axiom (TR4) is the axiom of triangulated categories which is an analogue of the second isomorphism theorem in abelian categories:
+   The octahedral axiom (TR4) is the axiom of triangulated categories which is an analogue of the third isomorphism theorem in abelian categories:
    $$ A\subseteq B \subseteq C \quad \leadsto \quad \frac{C/A}{B/A} \cong C/B. $$
   \pause
   \textbf{Open problem:} There is no known example of a pretriangulated category that does not satisfy the octahedral axiom, nor has it been proven to be a consequence of the other axioms (TR1)-(TR3).  

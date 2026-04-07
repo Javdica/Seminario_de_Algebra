@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber main"] 1775489127.58186 "main.bcf" "main.bbl" "main" 1775489740.47494 0
+["biber main"] 1775551143.79162 "main.bcf" "main.bbl" "main" 1775551176.57798 0
   "bib2.bib" 1774606012 2473 c47eac679dc23ce6cb4bf58b504a15c2 ""
-  "main.bcf" 1775489740 109432 2104a4c749f19b2781881bec39d5d529 "pdflatex"
+  "main.bcf" 1775551176 109503 546f04b9968d02a8b6cbfdf9b525ecda "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1775489736.91348 "c:/Users/diazc/OneDrive/Documentos/PhD/Charlas/Seminario de Álgebra 2026/Seminario_de_Álgebra_26/main.tex" "main.pdf" "main" 1775489740.47586 0
+["pdflatex"] 1775551170.08597 "c:/Users/diazc/OneDrive/Documentos/GitHub/Seminario_de_Algebra/Seminario_de_Algebra/main.tex" "main.pdf" "main" 1775551176.57937 0
   "US.jpg" 1774439638 188641 b8963d54852ab23ec35bdc717e73bc44 ""
-  "c:/Users/diazc/OneDrive/Documentos/PhD/Charlas/Seminario de Álgebra 2026/Seminario_de_Álgebra_26/main.tex" 1775489736 15200 9341abe4f417786d857ca70d3e48a522 ""
+  "c:/Users/diazc/OneDrive/Documentos/GitHub/Seminario_de_Algebra/Seminario_de_Algebra/main.tex" 1775551169 15312 adf4ec166bba3bfa3f26de7932246f3a ""
   "c:/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1771930189 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1771925595 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1771925595 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -289,12 +289,12 @@
   "c:/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1771942467 3636145 b9817b5aa631357fea0b23d371165ff6 ""
   "c:/texlive/2025/texmf.cnf" 1771942224 713 e69b156964470283e0530f5060668171 ""
   "imus_basico.png" 1774439638 9954 b8f94e4d830f5300031cbc5c8fafab49 ""
-  "main.aux" 1775489740 6619 054f432bb76e2e2de646ffea8401e8be "pdflatex"
-  "main.bbl" 1775489129 7428 dfdcf511af62f319baa9ca9a1a699abf "biber main"
-  "main.nav" 1775489740 3237 042b39732592e42195042ab3bda3d3c9 "pdflatex"
-  "main.out" 1775489740 870 1032c6b670b80d4993b73a3285ce5a0d "pdflatex"
-  "main.run.xml" 1775489740 2305 539b5ff00bef207e16fbb55a728118a9 "pdflatex"
-  "main.tex" 1775489736 15200 9341abe4f417786d857ca70d3e48a522 ""
+  "main.aux" 1775551176 6775 50cb5e361dae42fd3cf9934b75e888e9 "pdflatex"
+  "main.bbl" 1775551146 8813 518155aeb25cfc4b91de09aeb0e43c48 "biber main"
+  "main.nav" 1775551176 3237 042b39732592e42195042ab3bda3d3c9 "pdflatex"
+  "main.out" 1775551176 870 1032c6b670b80d4993b73a3285ce5a0d "pdflatex"
+  "main.run.xml" 1775551176 2305 539b5ff00bef207e16fbb55a728118a9 "pdflatex"
+  "main.tex" 1775551169 15312 adf4ec166bba3bfa3f26de7932246f3a ""
   (generated)
   "main.aux"
   "main.bcf"
